@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Javascript Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <div class="jumbotron">
+<h1>CHANGE  IMAGES  USING  JAVASCRIPT</h1>
+
+<img id="myImage" onclick="changeImage()" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNNmO00cZnKgY3yDvHVtZir-EH4luIXjnJ6qY90ebmKfoC3sMu" width="300" height="300">
+
+<p><br><br>Click the light bulb to turn on/off the light.</p>
+</div>
+</div>
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    
+    
+    if (image.src.match("http://www.salesenlightenment.com/images/bulb_on.jpg")) {
+        image.src = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNNmO00cZnKgY3yDvHVtZir-EH4luIXjnJ6qY90ebmKfoC3sMu";
+        
+    } else {
+        image.src = "http://www.salesenlightenment.com/images/bulb_on.jpg";
+        
+    }
+}
+</script>
+
+</body>
+</html> 
+
+
